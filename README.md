@@ -13,3 +13,7 @@
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/3c0d63eb-d47e-44d0-9140-b08efed00f7f)
 
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/4446ddc2-22c9-44ff-bbe1-a361adc38eed)
+
+
+-Now we can see it on the Azuer portal in the Resources Groups seccion
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/3904ce21-0cd5-4c76-a768-55d44a805713)
