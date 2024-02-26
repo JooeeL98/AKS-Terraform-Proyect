@@ -18,9 +18,10 @@
 -Now we can see it on the Azuer portal in the Resources Groups seccion
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/3904ce21-0cd5-4c76-a768-55d44a805713)
 
-- we have to implement on de new modules folder main.tf and variables.tf
-- On the main.tf we ahve to put the azure_service_principal where we can find on the Hashicorp documentation. Is the data source which is reading the data from the client config,
+-We have to implement on de new modules folder main.tf and variables.tf
+-On the main.tf we ahve to put the azure_service_principal where we can find on the Hashicorp documentation. Is the data source which is reading the data from the client config,
   we'll be using that data in the creation of service principal along the details that we'll be providing externally.
+
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/ef036339-c4dd-4361-8f73-af80ca331c99)
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/eb9d8187-296d-4c4e-b51b-68bb41b4a603)
 
@@ -30,4 +31,26 @@
 -Dont forget implement on the variable.tf and terraform.tfvars
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/5904c389-4185-4247-a0ca-008d959e6c44)
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/8ee0c48a-4067-4444-9979-6e90eb72b0ac)
+
+-Now we have to implement a new resource on main.tf of module, and it is a azuread_service_principal_password. To manages a password credential associated with a service principal within Azure Active Directory.
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/dd789352-72cd-4974-9308-128213f7e8f5)
+
+-We have to created into a module a output.tf
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/b9a0a702-1e16-4ff4-848f-06eb21e7f091)
+
+-Then we have to do tf init again, tf plan and tf apply. So we can see on de azure portal,in Azure Entra id Seccion >Apps registration our service_principal_name without any roll
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/8410cbb7-9f63-4be9-81a0-afa6907af44d)
+
+-Now we going to add app roll from terraform. And do tf plan and apply
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/e947e31d-23c7-4a30-9011-dfdd871c78bf)
+
+-(OPTIONAL)Also we have to implement a key vault folder on modules and initialize on main.tf in t general main
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/872ad3a3-c870-4e5f-bad9-351e98e8471d)
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/93aa0dc8-d906-4084-aaf4-1833add50f1f)
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/77a43528-ba77-49aa-8377-cc30201971b5)
+
+2-Creating Module to AKS
+
+
+
 
