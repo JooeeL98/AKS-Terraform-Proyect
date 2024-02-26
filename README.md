@@ -17,3 +17,17 @@
 
 -Now we can see it on the Azuer portal in the Resources Groups seccion
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/3904ce21-0cd5-4c76-a768-55d44a805713)
+
+- we have to implement on de new modules folder main.tf and variables.tf
+- On the main.tf we ahve to put the azure_service_principal where we can find on the Hashicorp documentation. Is the data source which is reading the data from the client config,
+  we'll be using that data in the creation of service principal along the details that we'll be providing externally.
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/ef036339-c4dd-4361-8f73-af80ca331c99)
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/eb9d8187-296d-4c4e-b51b-68bb41b4a603)
+
+-Then we have to implement in our main.tf the module that we created
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/80a1595a-155e-430c-aee2-0d73d3805136)
+
+-Dont forget implement on the variable.tf and terraform.tfvars
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/5904c389-4185-4247-a0ca-008d959e6c44)
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/8ee0c48a-4067-4444-9979-6e90eb72b0ac)
+
