@@ -50,6 +50,17 @@
 ![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/77a43528-ba77-49aa-8377-cc30201971b5)
 
 2-Creating Module to AKS
+-i implement a main.tf, variables.tf and output.tf. You can see the all file in the /modules/aks directory
+in my case i was delete "zones" that was in the main.tf, because i have a region that not working with availibility zones(then that it was getting me a error)
+
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/752f7add-83c0-4c94-ba97-2e79aa4d16e2)
+
+- now i execute the comands, tf plan, tf apply
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/053276b9-ec70-49ed-83ae-a0575ce24a75)
+
+-And finaly you can see on the azure portal in de aks section the cluster was created.
+![image](https://github.com/JooeeL98/AKS-Terraform-Proyect/assets/145325906/e391c6d8-8290-46a8-985f-c0adec0e2aff)
+
 
 
 
